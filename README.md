@@ -1,8 +1,11 @@
 Snake app served with Node.js
 
-frontend
-  - javascript, html, css
-backend
+Frontend
+  - javascript
+  - html
+  - css
+  
+Backend
   - node.js
   - mysql server hosted with AWS
 
