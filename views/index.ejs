@@ -13,34 +13,12 @@
     <div id="score">Your Score:</div>
     
     <form action="javascript:void(0);">
-        Name:<br>
+        Name:
         <input type="text" name="name" id=name>
         <button onclick="loadDoc()">Submit</button>
     </form>
-    <div id="highscores">
-            <h1>
-                High Scores
-            </h1>
-            <table class="center">
-                <tr>
-                    <th>Name</th>
-                    <th>Score</th>
-                    <th>Time</th>
-                </tr>
-                    
-                <% dbscores.forEach(result=> { %>
-                    <tr>
-                        <td><%= result.name %></td>
-                        <td><%= result.score %></td>
-                        <td><%= result.ts %></td>
-                    </tr>   
-                <% }); %>
-
-                </table>
-            <ul>
-
-            </ul>
-        </div>
+    <div><a href="/scores">High Scores</a></div>
+    
     
 
   </body>
@@ -179,6 +157,7 @@
             console.log(submittedName);
             xhttp.open("GET", "/submitscore" + `/${submittedName}` + `/${gameScore}`, true);
             xhttp.send(); 
+            location.reload();
         }
     </script>
 
