@@ -11,4 +11,4 @@ Backend
 
  - containerized using Docker at "dingxuanyao/nodesnakeappsql"
  - served with AWS ECS (Elastic Container Service)
- - [Check it out here](http://3.86.99.90/)
+ - [Check it out here](http://35.170.185.243/snake)
